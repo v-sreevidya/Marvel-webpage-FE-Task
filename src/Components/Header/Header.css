@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.board{
+    background-color: navy;
+    display: flex;
+    width: 100%;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+   
+}
+.quote{
+    
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

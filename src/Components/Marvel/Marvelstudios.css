@@ -1,0 +1,20 @@
+.name{
+    color:deepskyblue;
+    display: flex;
+    padding-top: 10%;
+    padding-left: 10%;
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+.discription{
+    font-family:sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+    padding-left: 10%;
+    padding-right: 15%;
+    padding-top: 3%;
+    line-height: 2;
+   
+}

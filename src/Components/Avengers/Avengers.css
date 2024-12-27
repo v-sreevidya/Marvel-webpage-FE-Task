@@ -1,0 +1,223 @@
+.head {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+
+.thor {
+  display: flex;
+  position: relative;
+  transform: scaleX(-1);
+  width: 100%;
+  height: 80vh;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-image: url("images/thor.jpg");
+  margin-bottom: 50px;
+}
+.thor::before {
+  
+  content: "THOR \A GOD OF THUNDER";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  transform: scaleX(-1);
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  white-space: pre;
+  text-align: center;
+}
+
+.iron {
+  
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url("images/iron.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.iron::before {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  content: "IRON MAN";
+  font-weight: 800;
+  color: white;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  text-align: left;
+}
+.captain {
+  transform: scaleX(-1);
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url("images/captain.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.captain::before {
+  
+  content: "CAPTIAN AMERICA";
+  position: absolute;
+
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  transform: scaleX(-1);
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  white-space: pre;
+  text-align: right;
+}
+.hulk {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url("images/hulk.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.hulk::before {
+  content: "HULK";
+  position: absolute;
+  font-weight: 800;
+  top: 50%;
+  left: 10%;
+  color: white;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  text-align: left;
+}
+.black {
+  display: flex;
+  position: relative;
+  transform: scaleX(-1);
+  width: 100%;
+  height: 80vh;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-image: url("images/widow.jpg");
+  margin-bottom: 50px;
+}
+.black::before {
+  content: "BLACK WIDOW";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  transform: scaleX(-1);
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  white-space: pre;
+  text-align: right;
+}
+.spider {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url("images/spider.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+  
+}
+.spider::before {
+  content: "SPIDER-MAN";
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  font-weight: 800;
+  color: white;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  text-align: left;
+  
+}
+@media (max-width: 1200px) {
+  .head {
+    font-size: 3rem;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+  }
+  .name{
+    font-size: 3rem;
+  }
+  .quote{
+    font-size: 4rem;
+    padding: 5%;
+  }
+  .discription{
+    font-size: 2.5rem;
+    padding: 5%;
+  }
+
+  .thor, .iron, .captain, .hulk, .black, .spider {
+    height: 40vh;
+  }
+
+  .thor::before, .iron::before, .captain::before, .hulk::before, .black::before, .spider::before {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .head, .name {
+    font-size: 2rem;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+  }
+  .quote{
+    font-size: 3rem;
+    padding: 5%;
+  }
+  .discription{
+    font-size: 1.5rem;
+    padding: 5%;
+  }
+
+  .thor, .iron, .captain, .hulk, .black, .spider {
+    height: 40vh;
+  }
+
+  .thor::before, .iron::before, .captain::before, .hulk::before, .black::before, .spider::before {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .head,.name {
+    font-size: 1.5rem;
+    padding-top: 5vh;
+    padding-bottom: 3.5vh;
+  }
+  .quote{
+    font-size: 2rem;
+    padding: 5%;
+  }
+  .discription{
+    font-size: 1.5rem;
+    padding: 5%;
+  }
+  
+
+  .thor, .iron, .captain, .hulk, .black, .spider {
+    height: 30vh;
+  }
+
+  .thor::before, .iron::before, .captain::before, .hulk::before, .black::before, .spider::before {
+    font-size: 1rem;
+  }
+}
