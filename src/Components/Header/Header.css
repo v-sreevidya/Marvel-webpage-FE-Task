@@ -3,7 +3,7 @@
     margin: 0;
 }
 .board{
-    background-color: navy;
+    
     display: flex;
     width: 100%;
     height: 25vh;
@@ -15,6 +15,6 @@
     
     font-size: 3rem;
     font-weight: bolder;
-    color: white;
+    color: blue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

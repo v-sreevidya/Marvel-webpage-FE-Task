@@ -1,0 +1,188 @@
+.captain-page {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .captain-head {
+    background-image: url(/src/Components/Avengers/images/captainamericanew.jpg);
+    display: flex;
+    position: relative;
+    font-size: larger;
+    width: 100%;
+    height: 80vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+  }
+  .captain-quote {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    color: gold;
+    font-style: italic;
+    white-space: nowrap;
+    margin: 0px 40px;
+  }
+  .captain-1,
+  .captain-2,
+  .captain-3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .captainposter1,
+  .captainposter2,
+  .captainposter3 {
+    width: 500px;
+    height: 350px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+    margin: 20px 20px;
+  }
+  .captainposter1 {
+    background-image: url(/src/Components/Avengers/images/captainamerica1.jpg);
+  }
+  .captainposter2 {
+    background-image: url(/src/Components/Avengers/images/captainamerica2.jpg);
+  }
+  .captainposter3 {
+    background-image: url(/src/Components/Avengers/images/captainamerica3.jpg);
+  }
+ 
+  .captaindetails1,
+  .captaindetails2,
+  .captaindetails3{
+    max-width: 50%;
+    height: 40vh;
+  }
+  .captainname1,
+  .captainname2,
+  .captainname3 {
+    display: flex;
+    align-items: flex-start;
+    font-size: 30px;
+    padding: 10px;
+    color: red;
+  }
+  .captain2011,
+  .captaindark,
+  .captainragnarok {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    max-width: 800px;
+    padding: 10px;
+  }
+  
+  
+
+@media (max-width: 1024px) {
+  .captain-head {
+    height: 60vh;
+  }
+
+  .captain-quote {
+    font-size: 2rem;
+    padding: 15px;
+  }
+
+  .captainposter1,
+  .captainposter2,
+  .captainposter3 {
+    width: 90%;
+    
+  }
+
+  .captaindetails {
+    width: 90%;
+  }
+
+  .captainname1,
+  .captainname2,
+  .captainname3 {
+    font-size: 1.8rem;
+  }
+
+  .captain2011,
+  .captaindark,
+  .captainragnarok {
+    font-size: 1.1rem;
+  }
+}
+
+ 
+@media (max-width: 768px) {
+  .captain-head {
+    height: 50vh;
+  }
+
+  .captain-quote {
+    font-size: 1.5rem;
+  }
+
+  .captainposter1,
+  .captainposter2,
+  .captainposter3 {
+    max-width: 250px;
+  }
+
+  .captaindetails {
+    padding: 15px;
+  }
+
+  .captainname1,
+  .captainname2,
+  .captainname3 {
+    font-size: 1.5rem;
+  }
+
+  .captain2011,
+  .captaindark,
+  .captainragnarok {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .captain-head {
+    height: 40vh;
+  }
+
+  .captain-quote {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .captainposter1,
+  .captainposter2,
+  .captainposter3 {
+    max-width: 100%;
+  }
+
+  .captaindetails {
+    padding: 10px;
+  }
+
+  .captainname1,
+  .captainname2,
+  .captainname3 {
+    font-size: 1.2rem;
+  }
+
+  .captain2011,
+  .captaindark,
+  .captainragnarok {
+    font-size: 0.9rem;
+    width: 50px;
+  }
+}

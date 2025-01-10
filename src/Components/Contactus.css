@@ -1,0 +1,49 @@
+
+.contact-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+ 
+  .contact-card {
+    background-color: black;
+    width: 350px;
+   
+    
+    text-align: center;
+  }
+  
+  
+  .contact-card h1 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: -90px -20px 20px -100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 40px;
+  }
+  
+  
+  .contact-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-card li {
+    font-size: 20px;
+    color: white;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-right: 20px;
+    color: blue;
+    font-size: 40px;
+  }
+  

@@ -1,0 +1,87 @@
+.iron-page {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .iron-head {
+    background-image: url(/src/Components/Avengers/images/ironnew.jpg);
+    display: flex;
+    position: relative;
+    font-size: larger;
+    width: 100%;
+    height: 80vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+  }
+  .iron-quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    color: gold;
+    background-color:transparent;
+    font-style: italic;
+    white-space: nowrap;
+    margin: 0px 40px;
+  }
+  .iron-1,
+  .iron-2,
+  .iron-3{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .ironposter1,
+  .ironposter2,
+  .ironposter3{
+    width: 500px;
+    height: 350px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+    margin: 20px 20px;
+  }
+  .ironposter1 {
+    background-image: url(/src/Components/Avengers/images/ironman1.jpg);
+  }
+  .ironposter2 {
+    background-image: url(/src/Components/Avengers/images/ironman2.jpg);
+  }
+  .ironposter3 {
+    background-image: url(/src/Components/Avengers/images/ironman3.png);
+  }
+  
+  .irondetails1,
+  .irondetails2,
+  .irondetails3{
+    width: 50%;
+    height: 40vh;
+  }
+  .ironname1,
+  .ironname2,
+  .ironname3{
+    display: flex;
+    align-items: flex-start;
+    font-size: 30px;
+    padding: 10px;
+    color: red;
+  }
+  .iron2011,
+  .irondark,
+  .ironragnarok {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    max-width: 800px;
+    padding: 10px;
+  }
+  

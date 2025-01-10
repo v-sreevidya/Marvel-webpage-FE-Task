@@ -1,12 +1,15 @@
+
 .head {
   display: flex;
   justify-content: center;
   font-size: 3rem;
   padding-top: 180px;
   padding-bottom: 100px;
+  color: white;
 }
-
-.thor {
+.thor,
+.captain,
+.black {
   display: flex;
   position: relative;
   transform: scaleX(-1);
@@ -14,14 +17,15 @@
   height: 80vh;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-image: url("images/thor.jpg");
   margin-bottom: 50px;
 }
+.thor {
+  background-image: url("images/thor.jpg");
+}
 .thor::before {
-  
   content: "THOR \A GOD OF THUNDER";
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 10%;
   transform: translateY(-50%);
   transform: scaleX(-1);
@@ -31,17 +35,20 @@
   white-space: pre;
   text-align: center;
 }
-
-.iron {
-  
+.iron,
+.hulk,
+.spider {
   display: flex;
   position: relative;
   width: 100%;
   height: 80vh;
-  background-image: url("images/iron.jpg");
+
   background-size: 100% auto;
   background-repeat: no-repeat;
   margin-bottom: 50px;
+}
+.iron {
+  background-image: url("images/iron.jpg");
 }
 .iron::before {
   position: absolute;
@@ -55,22 +62,12 @@
   text-align: left;
 }
 .captain {
-  transform: scaleX(-1);
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 80vh;
   background-image: url("images/captain.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  margin-bottom: 50px;
 }
 .captain::before {
-  
   content: "CAPTIAN AMERICA";
   position: absolute;
-
-  top: 50%;
+  top: 40%;
   left: 10%;
   transform: translateY(-50%);
   transform: scaleX(-1);
@@ -81,14 +78,7 @@
   text-align: right;
 }
 .hulk {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 80vh;
   background-image: url("images/hulk.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  margin-bottom: 50px;
 }
 .hulk::before {
   content: "HULK";
@@ -102,20 +92,12 @@
   text-align: left;
 }
 .black {
-  display: flex;
-  position: relative;
-  transform: scaleX(-1);
-  width: 100%;
-  height: 80vh;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
   background-image: url("images/widow.jpg");
-  margin-bottom: 50px;
 }
 .black::before {
   content: "BLACK WIDOW";
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 10%;
   transform: translateY(-50%);
   transform: scaleX(-1);
@@ -126,98 +108,341 @@
   text-align: right;
 }
 .spider {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 80vh;
   background-image: url("images/spider.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  margin-bottom: 50px;
-  
 }
 .spider::before {
   content: "SPIDER-MAN";
   position: absolute;
-  left: 20%;
+  font-weight: 800;
+  left: 10%;
   top: 50%;
   font-weight: 800;
   color: white;
   transform: translateY(-50%);
   font-size: 3rem;
   text-align: left;
-  
 }
+.navigateThor {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 25%;
+  left: 22%;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transform: scaleX(-1);
+}
+.navigateCap {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 36%;
+  left: 22%;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transform: scaleX(-1);
+}
+.navigateBlack {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  transform: scaleX(-1);
+  bottom: 36%;
+  left: 18%;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.navigateIron {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 32%;
+  left: 14%;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.navigateHulk {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 32%;
+  left: 10%;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.navigateSpider {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 32%;
+  left: 16%;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.navigateThor:hover,
+.navigateCap:hover,
+.navigateBlack:hover {
+  background-color: lightblue;
+  color: black;
+}
+
 @media (max-width: 1200px) {
   .head {
     font-size: 3rem;
     padding-top: 8vh;
     padding-bottom: 5vh;
   }
-  .name{
+  .name {
     font-size: 3rem;
   }
-  .quote{
+  .quote {
     font-size: 4rem;
     padding: 5%;
   }
-  .discription{
+  .discription {
     font-size: 2.5rem;
     padding: 5%;
   }
-
-  .thor, .iron, .captain, .hulk, .black, .spider {
+  .thor,
+  .iron,
+  .captain,
+  .hulk,
+  .black,
+  .spider {
     height: 40vh;
   }
-
-  .thor::before, .iron::before, .captain::before, .hulk::before, .black::before, .spider::before {
+  .thor::before,
+  .iron::before,
+  .captain::before,
+  .hulk::before,
+  .black::before,
+  .spider::before {
     font-size: 2.5rem;
+  }
+  .navigateCap,
+  .navigateBlack,
+  .navigateThor {
+    font-size: 1.2rem;
+    position: absolute;
+    left: 15%;
+    bottom: 23%;
+    padding: 10px;
+  }
+  .navigateCap {
+    transform: translate(70%, -130%) scaleX(-1);
+  }
+  .navigateBlack {
+    transform: translate(40%, -130%) scaleX(-1);
+  }
+  .navigateThor {
+    transform: translate(50%, -30%) scaleX(-1);
+  }
+  .navigateIron,
+  .navigateHulk,
+  .navigateSpider {
+    font-size: 1.2rem;
+    position: absolute;
+    left: 15%;
+    bottom: 23%;
+    padding: 10px;
+  }
+  .navigateIron {
+    transform: translate(-15%, -90%);
+  }
+  .navigateHulk {
+    transform: translate(-45%, -90%);
+  }
+  .navigateSpider {
+    transform: translate(10%, -90%);
   }
 }
 @media (max-width: 768px) {
-  .head, .name {
+  .head,
+  .name {
     font-size: 2rem;
     padding-top: 5vh;
-    padding-bottom: 3vh;
+    padding-left: 3vh;
   }
-  .quote{
-    font-size: 3rem;
+  .quote {
+    font-size: 2.5rem;
     padding: 5%;
   }
-  .discription{
+  .discription {
     font-size: 1.5rem;
-    padding: 5%;
+    padding: 3%;
   }
 
-  .thor, .iron, .captain, .hulk, .black, .spider {
+  .thor,
+  .iron,
+  .captain,
+  .hulk,
+  .black,
+  .spider {
     height: 40vh;
   }
 
-  .thor::before, .iron::before, .captain::before, .hulk::before, .black::before, .spider::before {
+  .thor::before,
+  .iron::before,
+  .captain::before,
+  .hulk::before,
+  .black::before,
+  .spider::before {
     font-size: 1.5rem;
+  }
+
+  .navigateCap,
+  .navigateBlack,
+  .navigateThor {
+    font-size: 0.9rem;
+    position: absolute;
+    left: 15%;
+    bottom: 23%;
+
+    padding: 8px;
+  }
+  .navigateCap {
+    transform: translate(40%, -250%) scaleX(-1);
+  }
+  .navigateBlack {
+    transform: translate(15%, -250%) scaleX(-1);
+  }
+  .navigateThor {
+    transform: translate(30%, -200%) scaleX(-1);
+  }
+  .navigateIron,
+  .navigateHulk,
+  .navigateSpider {
+    font-size: 0.9rem;
+    position: absolute;
+    left: 15%;
+    bottom: 23%;
+    padding: 8px;
+  }
+  .navigateIron {
+    transform: translate(-20%, -200%);
+  }
+  .navigateHulk {
+    transform: translate(-40%, -200%);
+  }
+  .navigateSpider {
+    transform: translate(5%, -200%);
   }
 }
 @media (max-width: 480px) {
-  .head,.name {
+  .head,
+  .name {
     font-size: 1.5rem;
     padding-top: 5vh;
-    padding-bottom: 3.5vh;
+    padding-bottom: 1.5vh;
   }
-  .quote{
-    font-size: 2rem;
-    padding: 5%;
-  }
-  .discription{
+  .quote {
     font-size: 1.5rem;
-    padding: 5%;
+    padding-left: 10%;
   }
-  
-
-  .thor, .iron, .captain, .hulk, .black, .spider {
-    height: 30vh;
-  }
-
-  .thor::before, .iron::before, .captain::before, .hulk::before, .black::before, .spider::before {
+  .discription {
     font-size: 1rem;
+    padding: 8%;
+  }
+
+  .thor,
+  .iron,
+  .captain,
+  .hulk,
+  .black,
+  .spider {
+    height: 20vh;
+  }
+
+  .thor::before,
+  .iron::before,
+  .captain::before,
+  .hulk::before,
+  .black::before,
+  .spider::before {
+    font-size: 0.8rem;
+  }
+  .navigateCap {
+    font-size: 0.5rem;
+    position: absolute;
+    left: 21%;
+    bottom: 18%;
+    transform: translate(-10%, -250%) scaleX(-1);
+    padding: 5px;
+  }
+  .navigateBlack {
+    font-size: 0.5rem;
+    position: absolute;
+    left: 21%;
+    bottom: 18%;
+    transform: translate(-35%, -250%) scaleX(-1);
+    padding: 5px;
+  }
+  .navigateThor {
+    font-size: 0.5rem;
+    position: absolute;
+    left: 15%;
+    bottom: 23%;
+    transform: translate(20%, -120%) scaleX(-1);
+    padding: 5px;
+  }
+  .navigateIron,
+  .navigateHulk,
+  .navigateSpider {
+    font-size: 0.5rem;
+    position: absolute;
+    left: 15%;
+    bottom: 23%;
+    padding: 5px;
+  }
+  .navigateIron {
+    transform: translate(-30%, -150%);
+  }
+  .navigateHulk {
+    transform: translate(-50%, -150%);
+  }
+  .navigateSpider {
+    transform: translate(-5%, -150%);
   }
 }

@@ -1,0 +1,171 @@
+.black-page {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .black-head {
+    background-image: url(/src/Components/Avengers/images/blacknew.jpg);
+    display: flex;
+    position: relative;
+    font-size: larger;
+    width: 100%;
+    height: 80vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+  }
+  .black-quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    color: gold;
+    font-style: italic;
+    white-space: nowrap;
+    background-color: transparent;
+    margin: 0px 40px;
+  }
+  .black-1,
+  .black-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .blackposter1,
+  .blackposter2 {
+    width: 500px;
+    max-width: 1000px;
+    height: 350px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+    margin: 20px auto;
+  }
+  .blackposter1 {
+    background-image: url(/src/Components/Avengers/images/black1.jpeg);
+  }
+  .blackposter2 {
+    background-image: url(/src/Components/Avengers/images/black2.jpg);
+  }
+  
+  .blackdetails1,
+  .blackdetails2 {
+    width: 50%;
+    height: 40vh;
+  }
+  .blackname1,
+  .blackname2 {
+    display: flex;
+    align-items: flex-start;
+    font-size: 30px;
+    padding: 10px;
+    color: red;
+  }
+  .black2011,
+  .blackdark {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    max-width: 800px;
+    padding: 10px;
+  }
+  @media (max-width: 1024px) {
+    .black-head {
+      height: 60vh; 
+     padding-left: 1px;
+    }
+  
+    .black-quote {
+      font-size: 1.5rem; 
+      margin: 0 20px;
+      max-width: 95%;
+    }
+  
+    
+  
+    .blackposter1,
+    .blackposter2 {
+      width: 60%;
+      height: 250px; 
+     
+    }
+  
+    .blackname1,
+    .blackname2 {
+      font-size: 32px; 
+    }
+  
+    .black2011, .blackdark {
+      font-size: 1.5rem; 
+      width: 50%;
+    }
+  }
+  @media (max-width: 768px) {
+   
+    .black-head {
+      height: 30vh; 
+    }
+  
+    .black-quote {
+      font-size: 1.2rem;
+      width: auto;
+      padding-left: 1px;
+      white-space: normal;
+      overflow: hidden;
+      
+    }
+  
+    
+  
+    .blackposter1,
+    .blackposter2 {
+      width: 90%;
+      height: 230px;
+    }
+  
+    .blackname1,
+    .blackname2 {
+      font-size: 20px;
+    }
+  
+    .black2011, .blackdark {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 480px) {
+    
+    .black-head {
+      height: 40vh; 
+    }
+  
+    .black-quote {
+      font-size: 0.8rem;
+      margin: 10px 5px;
+    }
+  
+  
+  
+    .blackposter1,
+    .blackposter2 {
+      width: 100%;
+      height: 200px; 
+    }
+  
+    .blackname1,
+    .blackname2 {
+      font-size: 18px;
+    }
+  
+    .black2011, .blackdark {
+      font-size: 0.9rem;
+    }
+  }
+  

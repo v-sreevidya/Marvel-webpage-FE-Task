@@ -1,0 +1,219 @@
+.thor-page {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.thor-head {
+  background-image: url(/src/Components/Avengers/images/thornew.jpg);
+  display: flex;
+  position: relative;
+  font-size: larger;
+  width: 100%;
+  height: 80vh;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.thor-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+  color: gold;
+  font-style: italic;
+  white-space: nowrap;
+  background-color: transparent;
+  margin: 0px 40px;
+}
+.thor-1,
+.thor-2,
+.thor-3,
+.thor-4 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 20px 0;
+}
+.thorposter1,
+.thorposter2,
+.thorposter3,
+.thorposter4 {
+  width: 500px;
+  height: 350px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  margin: 20px 20px;
+}
+.thorposter1 {
+  background-image: url(/src/Components/Avengers/images/thor2011.jpg);
+}
+.thorposter2 {
+  background-image: url(/src/Components/Avengers/images/thordark.jpg);
+}
+.thorposter3 {
+  background-image: url(/src/Components/Avengers/images/thorragnarok.jpeg);
+}
+.thorposter4 {
+  background-image: url(/src/Components/Avengers/images/thorlove.jpeg);
+}
+.thordetails1,
+.thordetails2,
+.thordetails3,
+.thordetails4 {
+  width: 50%;
+  height: 40vh;
+}
+.thorname1,
+.thorname2,
+.thorname3,
+.thorname4 {
+  display: flex;
+  align-items: flex-start;
+  font-size: 30px;
+  padding: 10px;
+  color: red;
+}
+.thor2011,
+.thordark,
+.thorragnarok,
+.thorlove {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  max-width: 800px;
+  padding: 10px;
+}
+
+@media (max-width: 1024px) {
+  .thor-1, .thor-2, .thor-3, .thor-4 {
+    width: 70%;
+  }
+  .thor-head{
+    width: auto;
+  }
+  
+
+  
+
+  .thordetails h3 {
+    font-size: 20px;
+  }
+
+  .thordetails p {
+    font-size: 25px;
+  }
+
+  .thorposter1,
+  .thorposter2,
+  .thorposter3,
+  .thorposter4 {
+    width: 180%;
+    height: 25vh;
+  }
+
+  .thor-quote {
+    font-size: 1rem;
+    margin: 0 20px;
+  }
+  .thor2011,
+.thordark,
+.thorragnarok,
+.thorlove{
+  max-width: 80%;
+}
+}
+@media (max-width: 768px) {
+  
+  .thor-head {
+    height: 45vh;
+    
+  }
+
+  .thor-quote {
+    font-size: 0.8rem;
+    margin: 10px 0;
+    max-width: 100%;
+  }
+
+  .thor-1, .thor-2, .thor-3, .thor-4 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thorposter1,
+  .thorposter2,
+  .thorposter3,
+  .thorposter4 {
+    width: 90%;
+    height: 250px;
+    margin: 10px 0;
+  }
+
+  .thordetails1,
+  .thordetails2,
+  .thordetails3,
+  .thordetails4 {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .thorname1,
+  .thorname2,
+  .thorname3,
+  .thorname4 {
+    font-size: 22px;
+  }
+
+  .thor2011,
+  .thordark,
+  .thorragnarok,
+  .thorlove {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  
+  .thor-head {
+    height: 50vh;
+  }
+
+  .thor-quote {
+    font-size: 0.9rem;
+    margin: 0 5px;
+  }
+
+  .thorposter1,
+  .thorposter2,
+  .thorposter3,
+  .thorposter4 {
+    width: 90%;
+    height: 200px;
+    
+  }
+
+  
+
+  .thorname1,
+  .thorname2,
+  .thorname3,
+  .thorname4 {
+    font-size: 18px;
+  }
+
+  .thor2011,
+  .thordark,
+  .thorragnarok,
+  .thorlove {
+    font-size: 0.9rem;
+  }
+}
+
