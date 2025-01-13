@@ -12,6 +12,7 @@ import BlackPage from './Components/Black/BlackPage';
 import SpiderPage from './Components/Spider/SpiderPage';
 import Contactus from './Components/Contactus';
 import Navbar from './Components/Navbar';
+import ImageUploader from "./Components/ImageUploader";
 
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
       <Route path="/hulk" element={<HulkPage />} />
       <Route path="/black" element={<BlackPage />} />
       <Route path="/spider" element={<SpiderPage />} />
+      <Route path="/image" element={<ImageUploader />} />
     </Routes>
     </Router>
   );
