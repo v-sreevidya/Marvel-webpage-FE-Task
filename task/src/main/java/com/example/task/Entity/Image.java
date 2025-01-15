@@ -19,7 +19,7 @@ public class Image {
 
     private int displayOrder;
 
-    // Getters and setters
+  
     public Long getId() {
         return id;
     }
