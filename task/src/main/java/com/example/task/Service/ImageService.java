@@ -44,8 +44,8 @@ public class ImageService {
         });
     }
 
-    // Delete an image by ID
+   
     public void deleteImage(Long id) {
-        imageRepository.deleteById(id);  // Delete by ID
+        imageRepository.deleteById(id);  
     }
 }
